@@ -2,6 +2,12 @@
 #include <windows.h>
 using namespace std;
 
+//if-else语句 三元运算符 语句 循环for while do-while  break关键词 嵌套循环
+
+
+
+
+
 int main(){
     SetConsoleOutputCP(65001); // UTF-8 输出
     SetConsoleCP(65001);       // UTF-8 输入
@@ -154,23 +160,34 @@ cout << (age>=18 ? "yes" : "no") <<endl;
 //     cout<<i<<"";
 // }
 
-//1到n奇数和
-int n;
-cout << "输入n:";
-cin >>n;
-int sum =0;
-for (int i=1;i<=n;i++){
-    if (i%2!=0){
-    sum +=i;
-    cout<<i<<" ";
+//1到n奇数和a
 
-}
-}
-cout <<endl<<"sum="<<sum;
+// int n;
+// cout << "输入n:";
+// cin >>n;
+// int sum =0;
+// for (int i=1;i<=n;i++){
+//     if (i%2!=0){
+//     sum +=i;
+//     cout<<i<<" ";
+
+// }
+// }
+// cout <<endl<<"sum="<<sum;
 
 
 //嵌套循环
+for (int i = 1; i <= 200; i++) {
+    for (int j = 1; j <= i; j++) {
+        if (j >  9){
+            cout<<(j-10);
+            } else {
+                cout<<j;
+            }
 
+    }
+    cout << endl;
+}
 
 
 
