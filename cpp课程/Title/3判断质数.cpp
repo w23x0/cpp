@@ -5,27 +5,32 @@
 #include <windows.h>
 using namespace std;
 
+bool isPrime(long long n) {
+    if (n <= 1) {
+        return false;
+    }
+    if (n == 2) {
+        return true;
+    }
+    if (n % 2 == 0) {
+        return false;
+    }
+    for (long long j = 3; j <= n / j; j += 2) {
+        if (n % j == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
 int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);       
- int n;
+    long long n;
     cout << "输入：";
     cin >> n;
 
-    if (n <= 1) {
-        cout << "不是质数\n";
-        return 0;
-    }
-
-    bool isPrime = true;  // 假设是质数
-    for (int j = 2; j * j <= n; j++) {      //如果 n 有因子，那么最小的因子一定 ≤ √n，所以当 j * j > n 时，可以停止搜索。
-        if (n % j == 0) {
-            isPrime = false;
-            break;
-        }
-    }
-    
-    if (isPrime)
+    if (isPrime(n))
         cout << n << " 是质数\n";
     else
         cout << n << " 不是质数\n";

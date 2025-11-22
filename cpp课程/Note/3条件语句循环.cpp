@@ -155,18 +155,18 @@ cout << (age>=18 ? "yes" : "no") <<endl;
 // }
 
 //1到n奇数和
-// int n;
-// cout << "输入n:";
-// cin >>n;
-// int sum =0;
-// for (int i=1;i<=n;i++){
-//     if (i%2!=0){
-//     sum +=i;
-//     cout<<i<<" ";
+int n;
+cout << "输入n:";
+cin >>n;
+int sum =0;
+for (int i=1;i<=n;i++){
+    if (i%2!=0){
+    sum +=i;
+    cout<<i<<" ";
 
-// }
-// }
-// cout <<endl<<"sum="<<sum;
+}
+}
+cout <<endl<<"sum="<<sum;
 
 
 //嵌套循环
