@@ -4,5 +4,11 @@
     },
     "files.associations": {
         "iostream": "cpp"
+    },
+    // 让 Code Runner 在终端中运行，便于输入
+    "code-runner.runInTerminal": true,
+    // 每个源文件所在目录生成独立 bin 目录，避免都堆在仓库根目录
+    "code-runner.executorMap": {
+        "cpp": "cd \"$dir\" && if not exist \"bin\" mkdir \"bin\" && g++ \"$fileName\" -o \"bin\\$fileNameWithoutExt.exe\" && \"bin\\$fileNameWithoutExt.exe\""
     }
 }
