@@ -1,16 +1,13 @@
 #include <iostream>
-#ifdef _WIN32
-   #include <windows.h>
-#endif
+#include <windows.h>
 #include <climits>
 using namespace std;
 
 
 int main(){
-    #ifdef _WIN32
-        SetConsoleOutputCP(65001);
-        SetConsoleCP(65001);
-    #endif
+      SetConsoleOutputCP(65001);
+      SetConsoleCP(65001);
+
 
     //基数base：二进制、八进制、十进制、十六进制
     //位权weighit：每一位数字所代表的值
