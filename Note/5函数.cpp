@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 using namespace std;
 
 //编译器自上而下编译，函数放在上面   
@@ -69,8 +68,7 @@ int digitSum(int n){
 
 
 int main(){
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);       
+         
 
     //int 
     //void
