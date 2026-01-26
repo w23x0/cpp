@@ -1,5 +1,5 @@
 #include <iostream>
-#include <windows.h>
+
 using namespace std;
 
 //if-else语句 三元运算符 语句 循环for while do-while  break关键词 嵌套循环
@@ -9,8 +9,7 @@ using namespace std;
 
 
 int main(){
-    SetConsoleOutputCP(65001); // UTF-8 输出
-    SetConsoleCP(65001);       // UTF-8 输入
+
     int age=20;
 
 //条件语句

@@ -1,11 +1,8 @@
 #include <iostream>
-#include <windows.h>
 #include <chrono>
 using namespace std;
 
 int main(){
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);   
 
     cout<<"输入n=";
     long long n;

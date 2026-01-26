@@ -2,7 +2,6 @@
 // 质数：只有 1 和它本身两个约数
 // 判断方法：尝试用 2 ~ sqrt(n) 的数去除，如果能整除就不是质数
 #include <iostream>
-#include <windows.h>
 using namespace std;
 
 bool isPrime(long long n) {
@@ -24,8 +23,6 @@ bool isPrime(long long n) {
 }
 
 int main(){
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);       
     long long n;
     cout << "输入：";
     cin >> n;

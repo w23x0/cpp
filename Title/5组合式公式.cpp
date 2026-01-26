@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 using namespace std;
 #include <algorithm>
 #include <limits>
@@ -30,8 +29,6 @@ unsigned long long comb(int n, int r) {
 }
 
 int main(){
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);       
     cout<<"组合数C(n,r)"<<endl;
     int n,r;
     cout << "输入n和r:";

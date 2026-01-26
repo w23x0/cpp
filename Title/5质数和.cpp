@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 using namespace std;
 
 bool isPrime(long long n) {
@@ -20,8 +19,6 @@ bool isPrime(long long n) {
     return n;
 }
 int main(){
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);       
     long long n;
     cout << "输入n：";
     cin >> n;
