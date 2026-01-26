@@ -6,9 +6,9 @@
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.executorMap": {
-        "c": "cd $dir && powershell -NoProfile -Command \"$sub = Split-Path -Leaf (Get-Location).Path; $out = Join-Path '..\\bin' $sub; if (-not (Test-Path $out)) { New-Item -ItemType Directory -Path $out | Out-Null }; gcc '$fileName' -o (Join-Path $out '$fileNameWithoutExt.exe'); & (Join-Path $out '$fileNameWithoutExt.exe')\"",
-        "cpp": "cd $dir && powershell -NoProfile -Command \"$sub = Split-Path -Leaf (Get-Location).Path; $out = Join-Path '..\\bin' $sub; if (-not (Test-Path $out)) { New-Item -ItemType Directory -Path $out | Out-Null }; g++ '$fileName' -o (Join-Path $out '$fileNameWithoutExt.exe'); & (Join-Path $out '$fileNameWithoutExt.exe')\""
-    },
+    "c": "gcc -fexec-charset=GBK \"$fileName\" -o \"$workspaceFolder/bin/$relativeFileDirname/$fileNameWithoutExt\" && \"$workspaceFolder/bin/$relativeFileDirname/$fileNameWithoutExt\"",
+    "cpp": "g++ -fexec-charset=GBK \"$fileName\" -o \"$workspaceFolder/bin/$relativeFileDirname/$fileNameWithoutExt\" && \"$workspaceFolder/bin/$relativeFileDirname/$fileNameWithoutExt\""
+},
     "files.associations": {
         "chrono": "cpp",
         "iostream": "cpp",
