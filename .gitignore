@@ -1,5 +1,5 @@
-# 禁止同步插件配置
-.vscode/
+# 忽略本地设置
+.vscode/settings.json
 
 # 忽略所有编译输出
 bin/
