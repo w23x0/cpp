@@ -30,17 +30,18 @@ int main(){
 
 
 // 二进制转十进制
-    long long k,sum=0,er=1;
-    cout<<"请输入一个二进制整数：";
-    cin>>k;
-    for (int i=1;k>0;i++){
-        sum+=k%10*er;
-        er*=2;
-        k=k/10;
-    }
-    cout<<"转换后的十进制整数为："<<sum<<endl;
+    // long long k,sum=0,er=1;
+    // cout<<"请输入一个二进制整数：";
+    // cin>>k;
+    // for (int i=1;k>0;i++){
+    //     sum+=k%10*er;
+    //     er*=2;
+    //     k=k/10;
+    // }
+    // cout<<"转换后的十进制整数为："<<sum<<endl;
 
-
+//补码
+//msb最高有效值位
 
 
     return 0;
