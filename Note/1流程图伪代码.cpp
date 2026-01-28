@@ -23,3 +23,11 @@ int main() {
 
     return 0;
 }
+
+
+#include <chrono> // 必须包含这个头文件
+    auto start = chrono::high_resolution_clock::now();
+    // 你的代码
+    auto end = chrono::high_resolution_clock::now();
+    auto duration = chrono::duration_cast<chrono::nanoseconds>(end - start);
+    cout << "代码运行耗时: " << duration.count() << " 纳秒" << endl;
