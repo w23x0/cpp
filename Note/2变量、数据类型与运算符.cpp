@@ -53,7 +53,7 @@ int main(){ //主函数
 
 
    //逻辑运算符（Logical Operators）处理布尔值
-   //与 && 或 || 非 !
+   //与 (AND) && 或 (OR) || 非 (NOT) !  0 为假，非0 即为真
    bool b0=true;
    bool b1=false;
    cout<<"b0:"<<b0<<"\n"<<"b1:"<<b1<<endl;

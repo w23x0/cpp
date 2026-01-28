@@ -2,7 +2,6 @@
 #include <climits>
 using namespace std;
 
-
 int main(){
 
     //基数base：二进制、八进制、十进制、十六进制
@@ -41,7 +40,11 @@ int main(){
     // cout<<"转换后的十进制整数为："<<sum<<endl;
 
 //补码
-//msb最高有效值位
+//obsidian笔记
+
+
+// 作业
+
 
 
     return 0;
