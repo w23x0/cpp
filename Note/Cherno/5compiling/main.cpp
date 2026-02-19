@@ -22,4 +22,3 @@ int main()
 // cpps >> compiling >> object(obj) >> linking >> exe
 // g++  -o *.exe *.cpp
 // g++  -c *.cpp -o *.obj
-

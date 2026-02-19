@@ -9,3 +9,11 @@ bin/
 
 # 忽略本地编辑器设置
 .vscode/
+
+# 屏蔽 SWIG 生成的 C/C++ 包装代码
+*wrap.c
+*wrap.cxx
+
+# 屏蔽 SWIG 生成的 Python 模块（通常以下划线开头）
+_*.so
+_*.pyd
